@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charcutaria Andrade - Menu</title>
+    <link rel="stylesheet" href="../src/css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="navbar">
+        <a class="navbrand" href="../index.html"
+          ><img
+            src="../src/Images/logo.png"
+            alt="Logo Charcutaria Andrade"
+            class="logo1"
+        /></a>
+
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="fotos.html">Fotos</a>
+          </li>
+          <li class="nav-item">
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Nosso Cardápio</h2>
+
+        <div class="grid">
+          <div class="square" onclick="expandSquare(this)">
+            <h2>TRADICIONAL</h2>
+            <img src="../src/Images/linguiça%20tradic_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 16,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>APIMENTADA</h2>
+            <img src="../src/Images/linguiça%20apimen%20_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 18,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2 class="grande">PIMENTA BIQUINHO</h2>
+            <img src="../src/Images/linguiça%20com%20ax_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 20,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>QUEIJO COALHO</h2>
+            <img src="../src/Images/linguiça%20com%20qu_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 20,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>BACON</h2>
+            <img src="../src/Images/linguiça%20com%20ba_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 20,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>PROVOLONE</h2>
+            <img src="../src/Images/linguiça%20com%20qu_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 22,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>AZEITONA</h2>
+            <img src="../src/Images/linguiça%20com%20ax%20e_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 18,00</div>
+          </div>
+          <div class="square" onclick="expandSquare(this)">
+            <h2>QUIBE</h2>
+            <img src="../src/Images/linguiça%20de%20qui_resized.png" alt="Imagem 1" />
+            <div class="price">R$ 22,00</div>
+          </div>
+        </div>
+
+        <script>
+          function expandSquare(square) {
+            square.classList.toggle("expanded");
+          }
+        </script>
+
+        <a
+          href="https://wa.me/24988117451"
+          class="whatsapp-float"
+          target="_blank"
+        >
+          <img src="../src/Images/icone.png" alt="WhatsApp" />
+          <div id="frase">Faça seu pedido aqui!</div>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2023 Charcutaria Andrade. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>

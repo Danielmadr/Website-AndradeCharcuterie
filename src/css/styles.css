@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("../Images/fundo20.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  min-height: 100vh;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+header,
+main,
+footer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  color: #fff;
+  margin-top: 5px;
+}
+
+header #navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header #navbar .navbrand .logo {
+  width: 40vw;
+  min-width: 400px;
+}
+
+header #navbar .navbrand .logo1 {
+  width: 200px;
+}
+
+header #navbar .nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+header #navbar .nav-list .nav-item a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+header #navbar .nav-list .nav-item a:hover {
+  color: red;
+  transition: color 1s;
+}
+
+main #corpo {
+  display: flex;
+  justify-content: space-between;
+}
+
+main #corpo .fundo .fundo1 {
+  width: 40em;
+}
+
+main .content {
+  font-size: 2em;
+  flex: 1; /* Ocupa o espaço restante, empurrando o footer para a base */
+  padding: 10px;
+  max-width: 500px;
+}
+
+main .content h2,
+h1,
+p {
+  margin-bottom: 20px;
+}
+
+main .container .contact-info h2,
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+main .container .contact-info h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+main .container .contact-info p {
+  font-size: 20px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.container {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 600px;
+}
+
+/* Estilos para campos de entrada de texto, e-mail e área de texto */
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Estilos para botão de envio */
+input[type="submit"] {
+  background-color: #008000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para hover do botão de envio */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  max-width: 1200px;
+}
+
+.square {
+  width: 16rem;
+  height: 15rem;
+  margin-bottom: 20px;
+  background-color: #333333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.square h2 {
+  margin-bottom: 10px;
+}
+
+.price {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: none;
+}
+
+.square.expanded {
+  transform: scale(1.2);
+}
+
+.square.expanded .price {
+  display: block;
+}
+
+.grande {
+  font-size: 22px;
+}
+
+/* Estilo para o link flutuante do WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  bottom: 40px; /* Posiciona o ícone a 40px do rodapé */
+  right: 40px; /* Posiciona o ícone a 40px da borda direita */
+  z-index: 1000; /* Coloca o ícone em cima de outros elementos */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Estilize o ícone conforme necessário */
+.whatsapp-float img {
+  width: 60px; /* Ajuste o tamanho do ícone conforme desejado */
+  height: auto;
+  margin-bottom: 5px;
+}
+
+main #frase {
+  font-size: 18px; /* Tamanho do texto "Faça seu pedido aqui!" */
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+  padding: 20px;
+}
+
+.photo {
+  width: calc(33% - 10px);
+  max-width: 1500px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.photo img {
+  width: 100%;
+  display: block;
+}
+
+.photo.expanded {
+  transform: scale(1.2);
+}
+
+@media (max-width: 900px) {
+  header #navbar {
+    flex-direction: column-reverse;
+    gap: 1rem;
+    align-items: center;
+  }
+  main .content {
+    text-align: center;
+  }
+  main #corpo {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  main .container {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+  main .grid {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
